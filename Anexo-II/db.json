@@ -16,14 +16,8 @@
       "id": "GsS4ZCn5v_E"
     },
     {
-      "texto": "Finalizado",
       "hecha": true,
       "id": "Q2HlcbCH3Ik"
-    },
-    {
-      "texto": "Aprender Fetching Data",
-      "hecha": false,
-      "id": "qgpaO6ANBvk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

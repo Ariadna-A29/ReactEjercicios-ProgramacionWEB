@@ -6,7 +6,7 @@ async function crearTareas(texto) {
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({
+    body: ({
       texto: texto,
       hecha: false,
     }),
@@ -18,7 +18,7 @@ async function crearTareas(texto) {
 
 //crearTareas("Aprender Fetching Data");
 
-async function marcaHecho(id) {
+async function marcaHecho() {
   const respuesta = await fetch(`${URL}/${id}`, {
     method: "PATCH",
     headers: {
@@ -47,7 +47,7 @@ async function borrarTarea(id) {
   console.log("Tarea elimiada:", id);
 }
 
-//borrarTarea("FTYWvNgoPdg");
+//borrarTarea("qgpaO6ANBvk");
 
 async function actualizarTareas(id, texto, hecha) {
   const respuesta = await fetch(`${URL}/${id}`,{
@@ -56,7 +56,6 @@ async function actualizarTareas(id, texto, hecha) {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      texto: texto,
       hecha: hecha,
     }),
   });
